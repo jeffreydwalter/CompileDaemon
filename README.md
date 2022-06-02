@@ -1,4 +1,4 @@
-# Very simple Compile Daemon for Go [![GoDoc](https://godoc.org/github.com/githubnemo/CompileDaemon?status.png)](http://godoc.org/github.com/githubnemo/CompileDaemon)
+# Very simple Compile Daemon for Go [![GoDoc](https://godoc.org/github.com/jeffreydwalter/CompileDaemon?status.png)](http://godoc.org/github.com/jeffreydwalter/CompileDaemon)
 
 Watches your .go files in a directory and invokes `go build` if
 a file changed. Nothing more.
@@ -11,7 +11,7 @@ Usage:
 
 You can use the `go` tool to install `CompileDaemon`:
 
-	go get github.com/githubnemo/CompileDaemon
+	go get github.com/jeffreydwalter/CompileDaemon
 
 ## Development
 
@@ -76,7 +76,7 @@ If you still have too many open files, then you need to raise your process's fil
 
 ### `filepath.Walk() no space left on device`
 
-As described in [this issue](https://github.com/githubnemo/CompileDaemon/issues/23) it might happen that you run out of inotify watchers which are limited by your system configuration. Please consider increasing them as is documented [here](https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers).
+As described in [this issue](https://github.com/jeffreydwalter/CompileDaemon/issues/23) it might happen that you run out of inotify watchers which are limited by your system configuration. Please consider increasing them as is documented [here](https://github.com/guard/listen/wiki/Increasing-the-amount-of-inotify-watchers).
 
 ### Docker + Mac OS X
 
@@ -97,21 +97,21 @@ resources. You can tune the polling interval to your liking using the
 `-polling-interval=N` parameter but be advised: you should never use
 this in production as it is simply too wasteful.
 
-[1]: https://github.com/githubnemo/CompileDaemon/issues/44
-[2]: https://github.com/githubnemo/CompileDaemon/issues/47
+[1]: https://github.com/jeffreydwalter/CompileDaemon/issues/44
+[2]: https://github.com/jeffreydwalter/CompileDaemon/issues/47
 
 ## Project Details
 
 ### Credits
 
-CompileDaemon was written by [githubnemo](https://github.com/githubnemo).
+CompileDaemon was written by [jeffreydwalter](https://github.com/jeffreydwalter).
 
 Code and documentation was contributed by [jimstudt](https://github.com/jimstudt).
 
 ### Repository
 
-CompileDaemon is kept at [https://github.com/githubnemo/CompileDaemon](https://github.com/githubnemo/CompileDaemon)
+CompileDaemon is kept at [https://github.com/jeffreydwalter/CompileDaemon](https://github.com/jeffreydwalter/CompileDaemon)
 
 ### License
 
-CompileDaemon is licensed under the [BSD Two Clause License](https://github.com/githubnemo/CompileDaemon/blob/master/LICENSE)
+CompileDaemon is licensed under the [BSD Two Clause License](https://github.com/jeffreydwalter/CompileDaemon/blob/master/LICENSE)
